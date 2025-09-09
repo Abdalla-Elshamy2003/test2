@@ -1,0 +1,21 @@
+{
+  "name": "interior-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "build": "npx postcss style.css -o style.css --env production",
+  "start": "serve -l 5000 --single"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^10.1.0",
+    "serve": "^14.2.5",
+    "tailwindcss": "^4.1.12"
+  }
+}
