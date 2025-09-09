@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "npx postcss style.css -o style.css --env production",
-  "start": "serve -l 5000 --single"
+    "build": "npx postcss style.css -o style.css --env production",
+    "start": "serve -l 5000 --single",
+    "prepare-public": "npm run build && node copy-static.js",
+    "vercel-build": "npm run prepare-public"
   },
   "keywords": [],
   "author": "",
